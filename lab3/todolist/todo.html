@@ -21,34 +21,34 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 10vh; /* Пример высоты, чтобы центрировать форму на экране */
+                height: 10vh; 
             }
 
             #form {
                 display: flex;
-                gap: 15px; /* Расстояние между элементами формы */
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для формы */
-                border-radius: 8px; /* Скругление углов */
-                max-width: 600px; /* Максимальная ширина формы */
+                gap: 15px; 
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+                border-radius: 8px; 
+                max-width: 600px; 
                 width:90%;
                 background-color: white;
             }
 
             .form-control {
                 padding: 10px;
-                font-size: 16px; /* Размер шрифта */
-                border: 1px solid white; /* Граница */
-                outline: none; /* Убирает стандартный фокус браузера */
+                font-size: 16px;
+                border: 1px solid white; 
+                outline: none; 
                 width:100%;
                 border-radius: 8px;
             }
             .btn {
-                cursor: pointer; /* Курсор в виде указателя */
-                border: none; /* Убираем границу */
-                color: white; /* Цвет текста */
-                background-color: #007bff; /* Фоновый цвет кнопки */
-                padding: 15px 20px; /* Больший размер кнопки */
-                font-size: 20px; /* Больший размер текста кнопки */
+                cursor: pointer; 
+                border: none;
+                color: white; 
+                background-color: #007bff; 
+                padding: 15px 20px;
+                font-size: 20px; 
                 border-radius: 8px;
             }
             .elem {
@@ -64,23 +64,22 @@
             }
             .btn2{
                 display: flex;
-                cursor: pointer; /* Курсор в виде указателя */
-                border: none; /* Убираем границу */
-                color: white; /* Цвет текста */
-                background-color: rgb(234, 225, 225); /* Фоновый цвет кнопки */
-                padding: 15px 17px; /* Больший размер кнопки */
-                font-size: 20px; /* Больший размер текста кнопки */
+                cursor: pointer; 
+                border: none; 
+                color: white;
+                background-color: rgb(234, 225, 225); 
+                padding: 15px 17px; 
+                font-size: 20px; 
                 border-radius: 8px;
                 
             }
             
             .btn3{
                 background: url('https://cdn.icon-icons.com/icons2/1150/PNG/512/1486504830-delete-dustbin-empty-recycle-recycling-remove-trash_81361.png') no-repeat center center;
-                background-size: contain; /* Это гарантирует, что изображение подгоняется по размеру кнопки */
-                width: 34px; /* Ширина кнопки, задайте своё значение */
-                height: 34px; /* Высота кнопки, задайте своё значение */
-                border: none; /* Убираем границу */
-                /* margin-left:100px; */
+                background-size: contain; 
+                width: 34px; 
+                height: 34px; 
+                border: none; 
                 justify-content: end;
             }
             .btn3 img{
@@ -115,7 +114,6 @@
             <form id="form">
                 
                 <input type="text" class="form-control" id="taskInput" placeholder="New task" required>
-                <!-- <small id="emailHelp" class="form-text text-muted">Что делаем, сколько времени тратим, какой результат получаем.</small> -->
                 
                 <button type="submit" class="btn">Add</button>
             </form>
