@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>ToDo List</title> 
+        <style>
+            nav {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #292929;
+                color: gray;
+            }
+            #todo{
+                margin-left: 350px; 
+                margin-top: 60px;
+            }
+            
+            .bod {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 10vh; /* Пример высоты, чтобы центрировать форму на экране */
+            }
+
+            #form {
+                display: flex;
+                gap: 15px; /* Расстояние между элементами формы */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для формы */
+                border-radius: 8px; /* Скругление углов */
+                max-width: 600px; /* Максимальная ширина формы */
+                width:90%;
+                background-color: white;
+            }
+
+            .form-control {
+                padding: 10px;
+                font-size: 16px; /* Размер шрифта */
+                border: 1px solid white; /* Граница */
+                outline: none; /* Убирает стандартный фокус браузера */
+                width:100%;
+                border-radius: 8px;
+            }
+            .btn {
+                cursor: pointer; /* Курсор в виде указателя */
+                border: none; /* Убираем границу */
+                color: white; /* Цвет текста */
+                background-color: #007bff; /* Фоновый цвет кнопки */
+                padding: 15px 20px; /* Больший размер кнопки */
+                font-size: 20px; /* Больший размер текста кнопки */
+                border-radius: 8px;
+            }
+            .elem {
+                align-items: center;
+                display: flex;
+                font-size:18px;
+                width:50%;
+                border: 1px solid gray;
+                padding: 15px 20px;
+                border-radius: 8px;
+                margin-left:330px;
+                justify-content: space-between;
+            }
+            .btn2{
+                display: flex;
+                cursor: pointer; /* Курсор в виде указателя */
+                border: none; /* Убираем границу */
+                color: white; /* Цвет текста */
+                background-color: rgb(234, 225, 225); /* Фоновый цвет кнопки */
+                padding: 15px 17px; /* Больший размер кнопки */
+                font-size: 20px; /* Больший размер текста кнопки */
+                border-radius: 8px;
+                
+            }
+            
+            .btn3{
+                background: url('https://cdn.icon-icons.com/icons2/1150/PNG/512/1486504830-delete-dustbin-empty-recycle-recycling-remove-trash_81361.png') no-repeat center center;
+                background-size: contain; /* Это гарантирует, что изображение подгоняется по размеру кнопки */
+                width: 34px; /* Ширина кнопки, задайте своё значение */
+                height: 34px; /* Высота кнопки, задайте своё значение */
+                border: none; /* Убираем границу */
+                /* margin-left:100px; */
+                justify-content: end;
+            }
+            .btn3 img{
+                pointer-events:none;
+            }
+            
+            .text-title--done {
+                text-decoration: line-through;
+                color: black;
+                
+            }
+            .btn-done{
+                background: url('https://w7.pngwing.com/pngs/123/283/png-transparent-check-mark-computer-icons-checkmark-circle-angle-rim-share-icon.png') no-repeat center center;
+                background-size: contain;
+                
+            }
+            
+            
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <h1 style="width: 85%; text-align: start">ToDo List</h1>
+        </nav>
+        <h1 id="todo">ToDo List</h1>
+
+
+
+        
+        <div class="bod">
+            <form id="form">
+                
+                <input type="text" class="form-control" id="taskInput" placeholder="New task" required>
+                <!-- <small id="emailHelp" class="form-text text-muted">Что делаем, сколько времени тратим, какой результат получаем.</small> -->
+                
+                <button type="submit" class="btn">Add</button>
+            </form>
+        </div>
+        
+
+        
+            
+        
+        <ul id="tasksList">
+            
+            <!-- <li class="elem">
+                <button class="btn2 check"></button> 
+                <span class="text">Купить молоко</span> 
+                
+            </li> -->
+                
+        
+        </ul>
+        
+
+
+		<script src="script.js"></script>
+    </body>
+</html>
