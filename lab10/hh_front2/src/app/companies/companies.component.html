@@ -1,0 +1,9 @@
+<h2>Companies List</h2>
+
+<ul *ngIf="loaded">
+  <li *ngFor="let company of companies">
+    <a [routerLink]="['/companies', company.id]">{{company.id}} {{company.name}}</a>
+  </li>
+</ul>
+
+<p *ngIf="!loaded">Loading companies list...</p>

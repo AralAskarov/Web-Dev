@@ -1,0 +1,16 @@
+nav {
+    display:flex;
+    flex-direction: row;
+    border: 2px solid rgb(9, 6, 2);
+    background-color: rgb(223, 125, 125);
+    height:50px;
+    margin:auto;
+}
+nav a {
+    text-decoration: none;
+    margin-right: 10px;
+    font-size:24px;
+    font-weight: bold;
+    color:white;
+    padding:10px;
+}

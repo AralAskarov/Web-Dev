@@ -1,0 +1,19 @@
+<div *ngIf="loaded">
+    <h2>Company {{company.id}} {{company.name}} </h2>
+    <div>Address: {{company.address}}</div>
+    <div>Description: {{company.description}}</div>
+    <div>City: {{company.city}}</div>
+    <div>
+      <a [routerLink]="['vacancies']">vacancies of company</a>
+    </div>
+    <div>
+      <button (click)="goBack()">Go Back</button>
+    </div>
+  </div>
+  <p *ngIf="!loaded">Loading album...</p>
+  
+  <ul *ngIf="vacancies.length">
+    <li *ngFor="let vacancy of vacancies">
+      {{vacancy.id}} {{vacancy.name}}
+    </li>
+  </ul>
